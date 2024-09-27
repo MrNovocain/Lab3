@@ -16,7 +16,7 @@ organize and build our program.
 ### Project Structure
 Take a second to get familiar with how this project is structured. Maven projects
 are structured in a specific way, which isn't too different from what we have seen so far:
-- pom.xml: the Project Object Model (POM) xml file which contains the project configuration (IntelliJ automatically detects this file and runs maven commands to build the project for us)
+- pom.xml: the Project Object Model (POM) xml file which contains the project configuration(IntelliJ automatically detects this file and runs maven commands to build the project for us)
 - src/main/java: directory containing the source files for our project (note that it is automatically marked as the Sources Root)
 - src/main/resources: directory containing any resource files our project needs
 - src/test/java: directory containing the test files for our project (note that it is automatically marked as the Test Sources Root)
