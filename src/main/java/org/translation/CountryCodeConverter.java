@@ -32,6 +32,8 @@ public class CountryCodeConverter {
      * @throws RuntimeException if the resource file can't be loaded properly
      */
     public CountryCodeConverter(String filename) {
+        this.codeAsKey = new HashMap<>();
+        this.countryAsKey = new HashMap<>();
 
         try {
             List<String> lines = Files.readAllLines(Paths.get(getClass()
@@ -40,7 +42,7 @@ public class CountryCodeConverter {
             // TODO Task: use lines to populate the instance variable(s)
             this.codeAsKey = new HashMap<>();
             this.countryAsKey = new HashMap<>();
-            Iterator<String > iterator = lines.iterator();
+            Iterator<String> iterator = lines.iterator();
             if (iterator.hasNext()) {
                 iterator.next();
             }
